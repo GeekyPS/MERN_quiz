@@ -1,0 +1,159 @@
+.login-card {
+  background-color: white;
+  min-width: 50rem;
+  border-radius: 2.4rem;
+  padding: 4rem 7.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: slideInLeft;
+  animation-duration:0.75s ;
+  color: #212529;
+  
+}
+.login-card h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.auths {
+  display: flex;
+  gap: 1rem;
+  margin: 3.2rem auto;
+}
+.or {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+.text-field {
+  width: 100%;
+  border: 1px solid rgba(28, 28, 30, 0.48);
+  height: 6rem;
+  margin-bottom: 1.2rem;
+  border-radius: 6px;
+  padding: 0 5rem;
+}
+
+.text-field:focus {
+  outline: none !important;
+  border-color: #0049fc;
+  box-shadow: 0 0 10px rgba(0, 73, 252, 0.1);
+}
+.email-field {
+  background: url("../assets/input.png") no-repeat 4% 50%;
+  background-size: 3rem;
+}
+.password-field {
+  background: url("../assets/pass.png") no-repeat 4% 50%;
+  background-size: 3rem;
+}
+
+.logo-box {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.auth-logo {
+  width: 2.1rem;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  line-height: 1.55;
+  transition: all 0.1s;
+}
+
+.btn:hover {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.4);
+
+}
+
+.btn-fill {
+  color: white;
+  background-color: #0049fc;
+  width: 100%;
+}
+.remember-row {
+  display: flex;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.text-remember {
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.text-forgot {
+    color: #0049fc;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.check {
+  cursor: pointer;
+  transform: scale(1.5);
+
+}
+
+
+
+.signup-row {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+    font-size: 1.4rem;
+}
+
+.signup-row a {
+    color: #0049fc;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+
+}
+.hamburger {
+    display: none;
+}
+
+
+@keyframes slideInLeft {
+
+    0% {
+        transform: translateX(-10em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+

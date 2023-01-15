@@ -1,0 +1,43 @@
+.body {
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.main-component {
+    display: flex;
+    padding: 4rem 10rem;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.login-photo {
+    width: 60vh;
+    animation-name: slideInRight;
+    animation-duration: 0.75s;
+}
+
+@media(max-width:75em){
+    .login-photo{
+        display: none;
+    }
+    .main-component{
+        align-items: center;
+    }
+}
+
+
+
+@keyframes slideInRight {
+
+    0% {
+        transform: translateX(10em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
