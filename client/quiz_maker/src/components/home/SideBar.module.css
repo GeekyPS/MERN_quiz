@@ -1,0 +1,22 @@
+.sidebar {
+    width: 15vw;
+    background-image: linear-gradient(to bottom right,#0033b0,#1a5bfc);
+    color: white;
+
+}
+
+.sidebar-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    height: 100%;
+}
+
+.logo {
+    width: 10rem;
+}
+.exam-logo{
+    width: 100%;
+}

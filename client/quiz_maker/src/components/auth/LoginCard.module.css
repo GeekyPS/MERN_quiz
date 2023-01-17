@@ -7,9 +7,8 @@
   flex-direction: column;
   align-items: center;
   animation-name: slideInLeft;
-  animation-duration:0.75s ;
+  animation-duration: 0.75s;
   color: #212529;
-  
 }
 .login-card h1 {
   font-weight: 700;
@@ -27,6 +26,8 @@
   font-weight: 400;
   margin-bottom: 1.2rem;
 }
+
+
 .text-field {
   width: 100%;
   border: 1px solid rgba(28, 28, 30, 0.48);
@@ -42,11 +43,11 @@
   box-shadow: 0 0 10px rgba(0, 73, 252, 0.1);
 }
 .email-field {
-  background: url("../assets/input.png") no-repeat 4% 50%;
+  background: url("../../assets/input.png") no-repeat 4% 50%;
   background-size: 3rem;
 }
 .password-field {
-  background: url("../assets/pass.png") no-repeat 4% 50%;
+  background: url("../../assets/pass.png") no-repeat 4% 50%;
   background-size: 3rem;
 }
 
@@ -72,14 +73,13 @@
 }
 
 .btn:hover {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
 }
 
 .btn:active {
-    transform: translateY(0);
-    box-shadow: 0 0 0.5rem rgba(0,0,0,0.4);
-
+  transform: translateY(0);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 .btn-fill {
@@ -87,6 +87,16 @@
   background-color: #0049fc;
   width: 100%;
 }
+
+.invalid_text {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-self: start;
+  color: red;
+  margin-bottom: 2rem;
+}
+
 .remember-row {
   display: flex;
   padding: 0 1rem;
@@ -102,58 +112,46 @@
   gap: 1rem;
 }
 .text-remember {
-    font-size: 1.4rem;
-    font-weight: 200;
+  font-size: 1.4rem;
+  font-weight: 200;
 }
 
 .text-forgot {
-    color: #0049fc;
-    font-weight: 500;
-    font-size: 1.6rem;
-    text-decoration: none;
+  color: #0049fc;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: none;
 }
 .check {
   cursor: pointer;
   transform: scale(1.5);
-
 }
 
-
-
 .signup-row {
-    display: flex;
-    gap: 2rem;
-    margin-top: 5rem;
-    font-size: 1.4rem;
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+  font-size: 1.4rem;
 }
 
 .signup-row a {
-    color: #0049fc;
-    font-weight: 500;
-    font-size: 1.6rem;
-    text-decoration: none;
-
+  color: #0049fc;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: none;
 }
 .hamburger {
-    display: none;
+  display: none;
 }
-
 
 @keyframes slideInLeft {
+  0% {
+    transform: translateX(-10em);
+    opacity: 0;
+  }
 
-    0% {
-        transform: translateX(-10em);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-
-
-
-
-
-
